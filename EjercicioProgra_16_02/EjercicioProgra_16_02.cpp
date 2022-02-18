@@ -1,8 +1,10 @@
-
+﻿
 #include <iostream>
+#include <math.h>
 
 int main()
 {
+	/*
 	//Fibonacci
 	int num = 0; //variable para saber hasta donde llega la sucesion
 	int fibo = 0; //esta y la variable de abajo se usan para hacer funcionar la sucesion
@@ -52,5 +54,17 @@ int main()
 		fact *= i; //mi resultado lo multiplico por i, que va sumando 1 cada vez
 	}
 	std::cout << "El resultado es: " << fact;
-
+	*/
+	//Problema 5
+	double	n = 0, m = 0, r = 0; //declaro como double en caso de que el resutlado de decimales.
+	std::cout << "Resolveremos esta operacion (y/x)^(x+y)/√y" << std::endl;
+	std::cout << "Digete un x pls" << std::endl;
+	std::cin >> n;
+	std::cout << "Digete un y pls" << std::endl;
+	std::cin >> m;
+	
+	r = m / n;
+	r = pow(r, m + n); //pow se usa para potencias, primero pones el numero que quieres que se potencie y luego el exponente
+	r /= sqrt(m); //sqrt se usa para raiz cuadrada, se pone el dato que quieres que se le saque la raiz
+	std::cout << "El resultado es: " << r;
 }
