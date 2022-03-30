@@ -45,6 +45,7 @@ int main()
 
 	//Factoriales
 	std::cout << "Listo!, ahora pasemos a las factoriales" << std::endl;
+	*/
 	int fact = 1; //inicializo el resultado en uno, para que se multiplique desde 1
 	int factlenght = 0; //el numero hasta el que se va a multiplicar, o sea, el numero al que le vamos a sacar factorial
 	std::cout << "Dame el numero que quieres que le saque factorial." << std::endl;
@@ -54,7 +55,7 @@ int main()
 		fact *= i; //mi resultado lo multiplico por i, que va sumando 1 cada vez
 	}
 	std::cout << "El resultado es: " << fact;
-	*/
+
 	//Problema 5
 	double	n = 0, m = 0, r = 0; //declaro como double en caso de que el resutlado de decimales.
 	std::cout << "Resolveremos esta operacion (y/x)^(x+y)/√y" << std::endl;
